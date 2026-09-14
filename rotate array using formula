@@ -6,8 +6,8 @@ class Main {
         int k=3;
         int temp[]=new int[n];
             for(int i=0;i<arr.length;i++){
-                temp[(i+k)%n]=arr[i];
-            }
+                temp[(i+k)%n]=arr[i];//right
+                 temp[i]=arr[(i+k)%n];            }
     for(int a:temp){
         System.out.print(a+" ");
     }
