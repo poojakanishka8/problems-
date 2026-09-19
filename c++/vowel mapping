@@ -1,0 +1,46 @@
+#include<iostream>
+#include<string>
+using namespace std;
+int main(){
+        string s="Harish";
+        string res="";
+        for(int i=0;i<s.length();i++){
+            if(s[i]=='a'){
+                res+="2";
+            }
+            else if(s[i]=='e'){
+                res+="3";
+            }
+             else if(s[i]=='i'){
+                res+="4";
+            }
+             else if(s[i]=='o'){
+                res+="5";
+            }
+             else if(s[i]=='u'){
+                res+="6";
+            }
+            else{
+                res+=s[i];
+            }
+        }
+        cout<<res;
+    }
+
+Given the following vowel mapping:
+
+a → 2
+e → 3
+i → 4
+o → 5
+u → 6
+
+Replace each vowel in the given string with its corresponding number.
+
+Example:
+
+Input:
+Harish
+
+Output:
+H2r4sh
